@@ -1,12 +1,32 @@
 .field {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  padding: 0.5rem;
-  min-width: 2rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid black;
+}
+
+.label {
+  font-size: small;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .input {
   width: 2rem;
-  border-radius: 0.25rem;
+  height: 2rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.125rem solid black;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input:focus {
@@ -14,11 +34,6 @@ input:focus {
   border-color: #2e3236;
 }
 
-.label {
-  display: flex;
-  flex-direction: column;
-  font-style: italic;
-  font-weight: 400;
-  font-size: small;
-  text-transform: capitalize;
+.statMod {
+  text-align: center;
 }
