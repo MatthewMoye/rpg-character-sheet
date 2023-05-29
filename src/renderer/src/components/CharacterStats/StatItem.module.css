@@ -1,0 +1,24 @@
+.field {
+  margin: auto;
+  padding: 10px;
+  min-width: 30px;
+}
+
+.input {
+  width: 30px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #2e3236;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  font-weight: 400;
+  font-size: small;
+  text-transform: capitalize;
+}
