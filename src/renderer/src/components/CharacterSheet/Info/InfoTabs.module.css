@@ -4,13 +4,17 @@
   justify-content: center;
   width: 100%;
   margin: auto;
-  top: 0px;
+  top: 0;
+}
+
+.tab,
+.tabActive {
+  width: 10rem;
+  clip-path: polygon(15% 100%, 85% 100%, 100% 0, 0 0);
 }
 
 .tab {
-  width: 180px;
   background-color: #a58674;
-  clip-path: polygon(15% 100%, 85% 100%, 100% 0, 0 0);
 }
 
 .tab:hover {
@@ -18,16 +22,15 @@
 }
 
 .tabActive {
-  width: 180px;
   font-weight: 600;
   background-color: #746257;
-  clip-path: polygon(15% 100%, 85% 100%, 100% 0, 0 0);
 }
 
 .tabText {
+  text-transform: capitalize;
   text-align: center;
   display: block;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #000000;
   user-select: none;
   -ms-user-select: none;

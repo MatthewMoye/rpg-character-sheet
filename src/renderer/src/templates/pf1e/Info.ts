@@ -7,7 +7,7 @@ export const abilities = {
   cha: "",
 };
 
-export const tabs = ["Info", "Details"];
+export const tabs = ["info", "details"];
 
 export const tabsFields = {
   info: {

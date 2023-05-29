@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { tabsFields } from "@renderer/templates/pf1e/Info";
+import { tabs, tabsFields } from "@renderer/templates/pf1e/Info";
 import portrait from "@renderer/assets/portrait.png";
 import InfoItem from "./InfoItem";
 import InfoTabs from "./InfoTabs";
 import classes from "./InfoSection.module.css";
 
 const InfoSection = () => {
-  const [data, setData] = useState(tabsFields["info"]);
-  const [activeTab, setActiveTab] = useState("Info");
+  const [data, setData] = useState(tabsFields[tabs[0]]);
+  const [activeTab, setActiveTab] = useState(tabs[0]);
   const [editInfo, setEditInfo] = useState(true);
-  const [characterInfo, setCharacterInfo] = useState(tabsFields["Info"]);
+  const [characterInfo, setCharacterInfo] = useState(tabsFields[tabs[0]]);
 
   const setActiveTabHandler = (tab: string) => {
     setActiveTab(tab);
@@ -39,7 +39,7 @@ const InfoSection = () => {
         {/* Change to make popout window for editing ? */}
       </button>
       <div className={classes.wrapper}>
-        {activeTab === "Info" && (
+        {activeTab === tabs[0] && (
           <img src={portrait} alt="Character" className={classes.pic} />
         )}
         <div className={classes.infoWrapper}>
