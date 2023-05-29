@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { tabsFields } from "@renderer/templates/pf1e/Info";
+import portrait from "@renderer/assets/portrait.png";
 import InfoItem from "./InfoItem";
-import classes from "./InfoSection.module.css";
 import InfoTabs from "./InfoTabs";
-import portrait from "../../assets/portrait.png";
+import classes from "./InfoSection.module.css";
 
 const InfoSection = () => {
   const [data, setData] = useState(tabsFields["info"]);

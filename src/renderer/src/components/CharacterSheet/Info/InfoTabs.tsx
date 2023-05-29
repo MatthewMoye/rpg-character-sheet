@@ -1,4 +1,4 @@
-import { tabs } from "../../templates/pf1e/Info";
+import { tabs } from "../../../templates/pf1e/Info";
 import classes from "./InfoTabs.module.css";
 
 type InfoTabsProps = {

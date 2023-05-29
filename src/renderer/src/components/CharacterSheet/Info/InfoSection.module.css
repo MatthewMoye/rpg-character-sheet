@@ -1,12 +1,5 @@
 .section {
-  flex-grow: 0;
-  flex-shrink: 0;
-  width: 1200px;
-  min-height: 170px;
-  border-radius: 5px;
-  position: relative; 
-  border: 5px solid #746257;
-  background-color: #d3af98;
+  min-height: 11rem;
 }
 
 .button {

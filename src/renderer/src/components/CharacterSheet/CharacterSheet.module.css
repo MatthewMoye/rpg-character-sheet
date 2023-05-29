@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 75rem;
+}
+
+.content > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.content > *,
+.sectionWrapper > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 0.25rem;
+  border: 0.25rem solid #746257;
+  background-color: #d3af98;
+}
+
+.sectionWrapper {
+  min-height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: none;
+  border: none;
+  background-color: transparent;
+}

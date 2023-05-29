@@ -1,0 +1,8 @@
+.section {
+  min-height: 8rem;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: row;
+}

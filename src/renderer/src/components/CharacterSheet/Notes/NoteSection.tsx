@@ -1,7 +1,7 @@
 import classes from "./NoteSection.module.css";
 
 const NoteSection = () => {
-  return <div className={classes.section}></div>;
+  return <div className={classes.section}>notes</div>;
 };
 
 export default NoteSection;
