@@ -1,7 +1,7 @@
-import classes from "./FeatureSection.module.css";
+import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 
 const FeatureSection = () => {
-  return <div className={classes.section}>feature</div>;
+  return <CharacterSection width={"30rem"}>feature</CharacterSection>;
 };
 
 export default FeatureSection;

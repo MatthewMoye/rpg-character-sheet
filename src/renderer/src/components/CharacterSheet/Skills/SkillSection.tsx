@@ -1,7 +1,7 @@
-import classes from "./SkillSection.module.css";
+import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 
 const SkillSection = () => {
-  return <div className={classes.section}>skills</div>;
+  return <CharacterSection width={"20rem"}>notes</CharacterSection>;
 };
 
 export default SkillSection;

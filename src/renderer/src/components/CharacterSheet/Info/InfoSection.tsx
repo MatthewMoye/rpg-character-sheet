@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 import { tabs, tabsFields } from "@renderer/templates/pf1e/Info";
 import portrait from "@renderer/assets/portrait.png";
 import InfoItem from "./InfoItem";
@@ -32,7 +33,7 @@ const InfoSection = () => {
   console.log(data);
 
   return (
-    <div className={classes.section}>
+    <CharacterSection height={"14rem"}>
       <InfoTabs activeTab={activeTab} setActiveTab={setActiveTabHandler} />
       <button className={classes.button} onClick={setEditInfoHandler}>
         {editInfo ? "Edit" : "Stop Editing"}
@@ -55,7 +56,7 @@ const InfoSection = () => {
           })}
         </div>
       </div>
-    </div>
+    </CharacterSection>
   );
 };
 

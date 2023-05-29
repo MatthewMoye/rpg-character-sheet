@@ -1,7 +1,7 @@
-import classes from "./NoteSection.module.css";
+import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 
 const NoteSection = () => {
-  return <div className={classes.section}>notes</div>;
+  return <CharacterSection height={"20rem"}>notes</CharacterSection>;
 };
 
 export default NoteSection;

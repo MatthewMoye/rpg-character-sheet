@@ -1,7 +1,7 @@
-import classes from "./MiscSection.module.css";
+import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 
 const MiscSection = () => {
-  return <div className={classes.section}>misc</div>;
+  return <CharacterSection width={"20rem"}>misc</CharacterSection>;
 };
 
 export default MiscSection;

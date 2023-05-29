@@ -1,0 +1,8 @@
+.container {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 0.25rem;
+  border: 0.25rem solid #746257;
+  background-color: #d3af98;
+}
