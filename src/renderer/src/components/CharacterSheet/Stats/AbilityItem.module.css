@@ -1,7 +1,8 @@
 .field {
   display: flex;
+  height: 6rem;
+  width: 3rem;
   flex-direction: column;
-  margin: auto;
   border-radius: 0.25rem;
   border: 0.125rem solid black;
 }
@@ -15,8 +16,7 @@
 }
 
 .input {
-  width: 2rem;
-  height: 2rem;
+  height: 3rem;
   text-align: center;
   background-color: transparent;
   border: none;
@@ -36,4 +36,5 @@ input:focus {
 
 .statMod {
   text-align: center;
+  width: 100%;
 }

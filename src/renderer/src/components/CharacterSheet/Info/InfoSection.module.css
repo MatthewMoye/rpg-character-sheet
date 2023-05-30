@@ -1,11 +1,5 @@
-.button {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
 .wrapper {
-  height: 100%;
+  height: calc(100% - 2rem);
   width: 100%;
   display: flex;
   align-items: center;

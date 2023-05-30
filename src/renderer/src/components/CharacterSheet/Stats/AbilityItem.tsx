@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { abilityScoreModifierFormula } from "@renderer/templates/pf1e/Info";
-import classes from "./StatItem.module.css";
+import classes from "./AbilityItem.module.css";
 
-type StatItemProps = {
+type AbilityItemProps = {
   stat: string;
 };
 
-const StatItem = (props: StatItemProps) => {
+const AbilityItem = (props: AbilityItemProps) => {
   const { stat } = props;
 
   const [abilityScore, setAbilityScore] = useState(12);
   const mod = abilityScoreModifierFormula(abilityScore);
-  console.log(abilityScoreModifierFormula(0));
 
   return (
     <div className={classes.field}>
@@ -27,4 +26,4 @@ const StatItem = (props: StatItemProps) => {
   );
 };
 
-export default StatItem;
+export default AbilityItem;

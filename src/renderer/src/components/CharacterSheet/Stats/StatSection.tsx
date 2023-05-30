@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { abilities } from "@renderer/templates/pf1e/Info";
-import StatItem from "./StatItem";
+import AbilityItem from "./AbilityItem";
 import classes from "./StatSection.module.css";
 import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 
@@ -9,13 +9,15 @@ const StatSection = () => {
 
   return (
     <CharacterSection height={"8rem"}>
-      <div className={classes.attributes}>
-        {Object.keys(abils).map((e) => {
-          return <StatItem key={e} stat={e} />;
-        })}
+      <div className={classes.content}>
+        <div style={{ width: "10rem" }}>health</div>
+        <div style={{ width: "10rem" }}>movement</div>
+        <div className={classes.attributes}>
+          {Object.keys(abils).map((e) => {
+            return <AbilityItem key={e} stat={e} />;
+          })}
+        </div>
       </div>
-      <div>health</div>
-      <div>movement</div>
     </CharacterSection>
   );
 };

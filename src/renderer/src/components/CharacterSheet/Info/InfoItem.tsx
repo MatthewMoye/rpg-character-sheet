@@ -1,22 +1,27 @@
 import { ChangeEvent } from "react";
+import { useAppDispatch } from "@renderer/hooks/storeHooks";
 import classes from "./InfoItem.module.css";
+import { setCharacterDescriptionProperty } from "@renderer/features/character/characterSlice";
 
 type InfoItemProps = {
-  editInfo: boolean;
+  activeTab: string;
   label: string;
-  setAttribute: (e: ChangeEvent<HTMLInputElement>, label: string) => void;
+  value: string;
 };
 
 const InfoItem = (props: InfoItemProps) => {
-  const { editInfo, label } = props;
+  const { activeTab, label, value } = props;
+
+  const dispatch = useAppDispatch();
+
+  const updateValue = (e: ChangeEvent<HTMLInputElement>) => {
+    dispatch(setCharacterDescriptionProperty(activeTab, label, e.target.value));
+  };
+
   return (
     <div className={classes.field}>
       <label className={classes.label}>
-        <input
-          className={classes.input}
-          readOnly={editInfo}
-          onChange={(e) => props.setAttribute(e, label)}
-        />
+        <input className={classes.input} value={value} onChange={updateValue} />
         {label}
       </label>
     </div>
