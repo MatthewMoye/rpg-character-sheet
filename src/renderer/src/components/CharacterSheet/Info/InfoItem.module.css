@@ -5,6 +5,7 @@
 
 .input {
   width: 10rem;
+  color: var(--vars-text-color);
   background-color: transparent;
   border: none;
   border-bottom: 0.125rem solid black;
@@ -12,12 +13,13 @@
 
 input:focus {
   outline: none !important;
-  border-color: #2e3236;
+  border-color: black;
 }
 
 .label {
   display: flex;
   flex-direction: column;
+  color: var(--text-color);
   font-style: italic;
   font-weight: 400;
   font-size: small;

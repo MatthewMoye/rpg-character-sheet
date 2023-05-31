@@ -1,13 +1,15 @@
 .field {
+  background-color: var(--section-content-color);
   display: flex;
   height: 6rem;
   width: 3rem;
   flex-direction: column;
   border-radius: 0.25rem;
-  border: 0.125rem solid black;
+  border: 0.125rem solid var(--section-content-border-color);
 }
 
 .label {
+  color: var(--text-color);
   font-size: small;
   font-weight: 400;
   font-style: italic;
@@ -16,11 +18,12 @@
 }
 
 .input {
+  color: var(--vars-text-color);
   height: 3rem;
   text-align: center;
   background-color: transparent;
   border: none;
-  border-bottom: 0.125rem solid black;
+  border-bottom: 0.125rem solid var(--section-content-border-color);
 }
 
 .input::-webkit-outer-spin-button,
@@ -29,12 +32,12 @@
   margin: 0;
 }
 
-input:focus {
-  outline: none !important;
-  border-color: #2e3236;
+.input:focus {
+  border-color: var(--section-content-border-color);
 }
 
 .statMod {
+  color: var(--vars-text-color);
   text-align: center;
   width: 100%;
 }

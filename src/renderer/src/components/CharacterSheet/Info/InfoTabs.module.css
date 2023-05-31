@@ -14,16 +14,16 @@
 }
 
 .tab {
-  background-color: #a58674;
+  background-color: var(--section-tab-color);
 }
 
 .tab:hover {
-  background-color: rgb(148, 126, 113);
+  background-color: var(--section-tab-hover-color);
 }
 
 .tabActive {
   font-weight: 600;
-  background-color: #746257;
+  background-color: var(--section-tab-active-color);
 }
 
 .tabText {
@@ -31,7 +31,7 @@
   text-align: center;
   display: block;
   font-size: 1.25rem;
-  color: #000000;
+  color: var(--text-color);
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;

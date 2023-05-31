@@ -2,6 +2,6 @@
   flex-grow: 0;
   flex-shrink: 0;
   border-radius: 0.25rem;
-  border: 0.25rem solid #746257;
-  background-color: #d3af98;
+  border: 0.25rem solid var(--section-border-color);
+  background-color: var(--section-color);
 }

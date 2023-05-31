@@ -6,5 +6,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7e7e7e;
+  background-color: var(--background-color);
+}
+
+* {
+  --background-color: #000000;
+  --text-color: #858585;
+  --vars-text-color: #b4b4b4;
+  --header-color: #333333;
+  --section-color: #222222;
+  --section-border-color: #555555;
+  --section-tab-color: #00114b;
+  --section-tab-hover-color: #001b74;
+  --section-tab-active-color: #000b31;
+  --section-content-color: #333333;
+  --section-content-border-color: #520000;
 }
