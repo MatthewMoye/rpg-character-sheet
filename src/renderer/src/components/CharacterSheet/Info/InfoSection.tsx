@@ -7,8 +7,8 @@ import InfoTabs from "./InfoTabs";
 import classes from "./InfoSection.module.css";
 
 const InfoSection = () => {
-  const { img, description } = useAppSelector((state) => state.character);
-  const [activeTab, setActiveTab] = useState("info");
+  const { img, info } = useAppSelector((state) => state.character);
+  const [activeTab, setActiveTab] = useState("description");
 
   const setActiveTabHandler = (tab: string) => {
     setActiveTab(tab);
@@ -19,10 +19,10 @@ const InfoSection = () => {
       <InfoTabs
         activeTab={activeTab}
         setActiveTab={setActiveTabHandler}
-        tabs={Object.keys(description)}
+        tabs={Object.keys(info)}
       />
       <div className={classes.wrapper}>
-        {activeTab === "info" && (
+        {activeTab === "description" && (
           <img
             src={img ? img : portrait}
             alt="Character"
@@ -30,12 +30,12 @@ const InfoSection = () => {
           />
         )}
         <div className={classes.infoWrapper}>
-          {Object.keys(description[activeTab]).map((item) => (
+          {Object.keys(info[activeTab]).map((item) => (
             <InfoItem
               key={`info-item-${item}`}
               activeTab={activeTab}
               label={item}
-              value={description[activeTab][item]}
+              value={info[activeTab][item]}
             />
           ))}
         </div>

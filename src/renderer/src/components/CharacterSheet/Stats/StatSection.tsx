@@ -13,8 +13,8 @@ const StatSection = () => {
         <div style={{ width: "10rem" }}>health</div>
         <div style={{ width: "10rem" }}>movement</div>
         <div className={classes.attributes}>
-          {Object.keys(abilities).map((e) => {
-            return <AbilityItem key={e} stat={e} />;
+          {abilities.map((el) => {
+            return <AbilityItem key={el} stat={el} />;
           })}
         </div>
       </div>

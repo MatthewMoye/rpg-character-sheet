@@ -2,8 +2,8 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface CharacterState {
   img: string;
-  description: {
-    info: {
+  info: {
+    description: {
       name: string;
       race: string;
       class: string;
@@ -37,8 +37,8 @@ export interface CharacterState {
 
 const initialState: CharacterState = {
   img: "",
-  description: {
-    info: {
+  info: {
+    description: {
       name: "test",
       race: "test",
       class: "test",
@@ -87,7 +87,7 @@ export const characterSlice = createSlice({
         }>
       ) => {
         const { tab, property, value } = action.payload;
-        state.description[tab][property] = value;
+        state.info[tab][property] = value;
       },
       prepare: (tab: string, property: string, value: string | number) => {
         return { payload: { tab, property, value } };
