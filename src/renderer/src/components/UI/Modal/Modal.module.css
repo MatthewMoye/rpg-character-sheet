@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBox {
+  background-color: #3b3b3b;
+  border: #000000 solid 0.125rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.modalExitButton {
+  border-radius: 0.4rem;
+  background-color: #8a8a8a;
+  color: black;
+  border: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-weight: 800;
+}
+
+.modalExitButton:hover {
+  opacity: 75%;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

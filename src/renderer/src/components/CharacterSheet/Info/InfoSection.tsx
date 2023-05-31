@@ -4,11 +4,11 @@ import CharacterSection from "@renderer/components/UI/Character/CharacterSection
 import portrait from "@renderer/assets/portrait.png";
 import InfoItem from "./InfoItem";
 import InfoTabs from "./InfoTabs";
-import classes from "./InfoSection.module.css";
+import styles from "./InfoSection.module.css";
 
 const InfoSection = () => {
   const { img, info } = useAppSelector((state) => state.character);
-  const [activeTab, setActiveTab] = useState("description");
+  const [activeTab, setActiveTab] = useState("details");
 
   const setActiveTabHandler = (tab: string) => {
     setActiveTab(tab);
@@ -21,15 +21,15 @@ const InfoSection = () => {
         setActiveTab={setActiveTabHandler}
         tabs={Object.keys(info)}
       />
-      <div className={classes.wrapper}>
-        {activeTab === "description" && (
+      <div className={styles.wrapper}>
+        {activeTab === "details" && (
           <img
             src={img ? img : portrait}
             alt="Character"
-            className={classes.pic}
+            className={styles.pic}
           />
         )}
-        <div className={classes.infoWrapper}>
+        <div className={styles.infoWrapper}>
           {Object.keys(info[activeTab]).map((item) => (
             <InfoItem
               key={`info-item-${item}`}

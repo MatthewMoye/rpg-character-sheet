@@ -1,10 +1,10 @@
 import CharacterSelect from "./CharacterSelect";
 
-import classes from "./Header.module.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header className={classes.container}>
+    <header className={styles.container}>
       <CharacterSelect />
     </header>
   );

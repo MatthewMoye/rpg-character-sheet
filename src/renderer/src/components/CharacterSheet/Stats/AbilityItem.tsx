@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { abilityScoreModifierFormula } from "@renderer/templates/pf1e/Info";
-import classes from "./AbilityItem.module.css";
+import styles from "./AbilityItem.module.css";
 
 type AbilityItemProps = {
   stat: string;
@@ -13,15 +13,15 @@ const AbilityItem = (props: AbilityItemProps) => {
   const mod = abilityScoreModifierFormula(abilityScore);
 
   return (
-    <div className={classes.field}>
-      <label className={classes.label}>{stat}</label>
+    <div className={styles.field}>
+      <label className={styles.label}>{stat}</label>
       <input
         type={"number"}
         value={abilityScore}
         onChange={(e) => setAbilityScore(Number(e.target.value))}
-        className={classes.input}
+        className={styles.input}
       />
-      <span className={classes.statMod}>{mod}</span>
+      <span className={styles.statMod}>{mod}</span>
     </div>
   );
 };

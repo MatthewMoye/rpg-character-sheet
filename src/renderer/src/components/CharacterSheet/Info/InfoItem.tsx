@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 import { useAppDispatch } from "@renderer/hooks/storeHooks";
-import classes from "./InfoItem.module.css";
+import styles from "./InfoItem.module.css";
 import { setCharacterDescriptionProperty } from "@renderer/features/character/characterSlice";
 
 type InfoItemProps = {
@@ -19,9 +19,9 @@ const InfoItem = (props: InfoItemProps) => {
   };
 
   return (
-    <div className={classes.field}>
-      <label className={classes.label}>
-        <input className={classes.input} value={value} onChange={updateValue} />
+    <div className={styles.field}>
+      <label className={styles.label}>
+        <input className={styles.input} value={value} onChange={updateValue} />
         {label}
       </label>
     </div>

@@ -1,5 +1,5 @@
 import Select from "react-select";
-import classes from "./CharacterSelect.module.css";
+import styles from "./CharacterSelect.module.css";
 
 const CharacterSelect = () => {
   const options = [
@@ -13,7 +13,7 @@ const CharacterSelect = () => {
   };
 
   return (
-    <div className={classes.dropdown}>
+    <div className={styles.dropdown}>
       <Select
         placeholder="Choose Character..."
         options={options}

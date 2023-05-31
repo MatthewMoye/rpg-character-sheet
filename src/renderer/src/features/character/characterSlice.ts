@@ -3,13 +3,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export interface CharacterState {
   img: string;
   info: {
-    description: {
+    details: {
       name: string;
       race: string;
       class: string;
       level: number;
     };
-    details: {
+    description: {
       gender: string;
       age: string;
       skin: string;
@@ -21,7 +21,8 @@ export interface CharacterState {
     };
   };
   stats: {
-    health: number;
+    currentHp: number;
+    maxHp: number;
     movement: number;
     abilites: {
       str: { base: number };
@@ -38,13 +39,13 @@ export interface CharacterState {
 const initialState: CharacterState = {
   img: "",
   info: {
-    description: {
+    details: {
       name: "test",
       race: "test",
       class: "test",
       level: 1,
     },
-    details: {
+    description: {
       gender: "gender",
       age: "age",
       skin: "skin",
@@ -56,7 +57,8 @@ const initialState: CharacterState = {
     },
   },
   stats: {
-    health: 10,
+    currentHp: 10,
+    maxHp: 10,
     movement: 10,
     abilites: {
       str: { base: 10 },

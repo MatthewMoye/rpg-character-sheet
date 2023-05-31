@@ -1,5 +1,5 @@
 import AbilityItem from "./AbilityItem";
-import classes from "./StatSection.module.css";
+import styles from "./StatSection.module.css";
 import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 import { useAppSelector } from "@renderer/hooks/storeHooks";
 
@@ -9,10 +9,10 @@ const StatSection = () => {
 
   return (
     <CharacterSection height={"8rem"}>
-      <div className={classes.content}>
+      <div className={styles.content}>
         <div style={{ width: "10rem" }}>health</div>
         <div style={{ width: "10rem" }}>movement</div>
-        <div className={classes.attributes}>
+        <div className={styles.attributes}>
           {abilities.map((el) => {
             return <AbilityItem key={el} stat={el} />;
           })}
