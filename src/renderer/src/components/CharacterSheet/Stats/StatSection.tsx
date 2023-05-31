@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { abilities } from "@renderer/templates/pf1e/Info";
 import AbilityItem from "./AbilityItem";
 import classes from "./StatSection.module.css";
 import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
+import { useAppSelector } from "@renderer/hooks/storeHooks";
 
 const StatSection = () => {
-  const [abils, setAbils] = useState(abilities);
+  const { stats } = useAppSelector((state) => state.character);
+  const abilities = Object.keys(stats.abilites);
 
   return (
     <CharacterSection height={"8rem"}>
@@ -13,7 +13,7 @@ const StatSection = () => {
         <div style={{ width: "10rem" }}>health</div>
         <div style={{ width: "10rem" }}>movement</div>
         <div className={classes.attributes}>
-          {Object.keys(abils).map((e) => {
+          {Object.keys(abilities).map((e) => {
             return <AbilityItem key={e} stat={e} />;
           })}
         </div>

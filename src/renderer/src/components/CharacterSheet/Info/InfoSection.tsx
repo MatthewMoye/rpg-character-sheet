@@ -16,7 +16,11 @@ const InfoSection = () => {
 
   return (
     <CharacterSection height={"14rem"}>
-      <InfoTabs activeTab={activeTab} setActiveTab={setActiveTabHandler} />
+      <InfoTabs
+        activeTab={activeTab}
+        setActiveTab={setActiveTabHandler}
+        tabs={Object.keys(description)}
+      />
       <div className={classes.wrapper}>
         {activeTab === "info" && (
           <img

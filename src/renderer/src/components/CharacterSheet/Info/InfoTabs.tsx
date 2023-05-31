@@ -1,13 +1,13 @@
-import { tabs } from "../../../templates/pf1e/Info";
 import classes from "./InfoTabs.module.css";
 
 type InfoTabsProps = {
   activeTab: string;
   setActiveTab: (tab: string) => void;
+  tabs: string[];
 };
 
 const InfoTabs = (props: InfoTabsProps) => {
-  const { activeTab, setActiveTab } = props;
+  const { activeTab, setActiveTab, tabs } = props;
   return (
     <div className={classes.tabList}>
       {tabs.map((tab) => {
