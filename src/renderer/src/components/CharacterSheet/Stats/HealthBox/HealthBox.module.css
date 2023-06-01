@@ -1,0 +1,39 @@
+.healthBox {
+  width: 10rem;
+  height: 6rem;
+  background-color: var(--section-content-color);
+  border-radius: 0.25rem;
+  border: 0.125rem solid var(--section-content-border-color);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hpCount {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hpCountSpan {
+  color: var(--vars-text-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.editHpButton {
+  height: 1.6rem;
+  width: 9rem;
+  border-radius: 0.5rem;
+  background-color: var(--extra-button-color);
+  color: var(--text-color);
+  outline: none;
+  border: none;
+}
+
+.editHpButton:hover {
+  background-color: var(--extra-button-hover-color);
+}

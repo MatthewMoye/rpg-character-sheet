@@ -1,4 +1,5 @@
 import AbilityItem from "./AbilityItem";
+import HealthBox from "./HealthBox/HealthBox";
 import styles from "./StatSection.module.css";
 import CharacterSection from "@renderer/components/UI/Character/CharacterSection";
 import { useAppSelector } from "@renderer/hooks/storeHooks";
@@ -10,7 +11,7 @@ const StatSection = () => {
   return (
     <CharacterSection height={"8rem"}>
       <div className={styles.content}>
-        <div style={{ width: "10rem" }}>health</div>
+        <HealthBox />
         <div style={{ width: "10rem" }}>movement</div>
         <div className={styles.attributes}>
           {abilities.map((el) => {

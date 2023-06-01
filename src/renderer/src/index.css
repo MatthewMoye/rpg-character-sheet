@@ -13,12 +13,14 @@ body {
   --background-color: #000000;
   --text-color: #858585;
   --vars-text-color: #b4b4b4;
+  --extra-button-color: #004900;
+  --extra-button-hover-color: #005300;
   --header-color: #333333;
   --section-color: #222222;
   --section-border-color: #555555;
-  --section-tab-color: #00114b;
-  --section-tab-hover-color: #001b74;
-  --section-tab-active-color: #000b31;
+  --section-tab-color: #000b31;
+  --section-tab-hover-color: #001147;
+  --section-tab-active-color: #00155a;
   --section-content-color: #333333;
   --section-content-border-color: #520000;
 }
