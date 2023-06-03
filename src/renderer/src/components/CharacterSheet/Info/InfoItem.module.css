@@ -8,7 +8,7 @@
   color: var(--vars-text-color);
   background-color: transparent;
   border: none;
-  border-bottom: 0.125rem solid black;
+  border-bottom: 0.125rem solid var(--section-content-border-color);
 }
 
 input:focus {

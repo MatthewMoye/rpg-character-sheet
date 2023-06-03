@@ -28,12 +28,12 @@
   height: 1.6rem;
   width: 9rem;
   border-radius: 0.5rem;
-  background-color: var(--extra-button-color);
+  background-color: var(--button-color);
   color: var(--text-color);
   outline: none;
-  border: none;
+  border: 0.15rem solid var(--button-active-color);
 }
 
 .editHpButton:hover {
-  background-color: var(--extra-button-hover-color);
+  background-color: var(--button-hover-color);
 }
