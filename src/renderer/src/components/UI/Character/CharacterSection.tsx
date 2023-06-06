@@ -9,9 +9,9 @@ type CharacterSectionProps = {
 const CharacterSection = (props: PropsWithChildren<CharacterSectionProps>) => {
   const { children, width, height } = props;
   return (
-    <div className={styles.container} style={{ width, height }}>
+    <section className={styles.container} style={{ width, height }}>
       {children}
-    </div>
+    </section>
   );
 };
 

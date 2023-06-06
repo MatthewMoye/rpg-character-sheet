@@ -1,0 +1,64 @@
+.adjustHpContent {
+  width: 16rem;
+  height: 16rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hpAdjustSection {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hpCountSpan {
+  color: var(--vars-text-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.healButton,
+.dmgButton {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  outline: none;
+  border: 0.15rem solid var(--button-active-color);
+}
+
+.healButton {
+  background-color: #004611;
+}
+
+.healButton:hover {
+  background-color: #00360e;
+}
+
+.dmgButton {
+  background-color: #720000;
+}
+
+.dmgButton:hover {
+  background-color: #5e0000;
+}
+
+.hpAdjustInput {
+  height: 2rem;
+  width: calc(100% - 10px);
+  outline: none;
+  border: 0.15rem solid black;
+  background-color: #585858;
+  text-align: center;
+}
+
+.hpAdjustInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

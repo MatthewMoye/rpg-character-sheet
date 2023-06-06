@@ -95,10 +95,16 @@ export const characterSlice = createSlice({
         return { payload: { tab, property, value } };
       },
     },
+    updateCurrentHp: (state, action: PayloadAction<number>) => {
+      state.stats.currentHp += action.payload;
+    },
   },
 });
 
-export const { setCharacter, setCharacterDescriptionProperty } =
-  characterSlice.actions;
+export const {
+  setCharacter,
+  setCharacterDescriptionProperty,
+  updateCurrentHp,
+} = characterSlice.actions;
 
 export default characterSlice.reducer;

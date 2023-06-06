@@ -2,13 +2,20 @@ import { MouseEvent, PropsWithChildren } from "react";
 import styles from "./Modal.module.css";
 
 type ModalProps = {
+  backgroundOpacityPercent?: IntRange<0, 100>;
   width?: number;
   height?: number;
   setIsOpen: (isOpen: boolean) => void;
 };
 
 const Modal = (props: PropsWithChildren<ModalProps>) => {
-  const { children, width = 500, height = 500, setIsOpen } = props;
+  const {
+    children,
+    backgroundOpacityPercent = 75,
+    width = 500,
+    height = 500,
+    setIsOpen,
+  } = props;
 
   const toggleModal = (e: MouseEvent<HTMLDivElement | HTMLButtonElement>) => {
     e.stopPropagation();
@@ -16,8 +23,18 @@ const Modal = (props: PropsWithChildren<ModalProps>) => {
   };
 
   return (
-    <div className={styles.modal} onClick={toggleModal}>
-      <div className={styles.modalBox} style={{ width, height }}>
+    <div
+      className={styles.modal}
+      style={{
+        backgroundColor: `rgba(0, 0, 0, ${backgroundOpacityPercent / 100})`,
+      }}
+      onClick={toggleModal}
+    >
+      <div
+        className={styles.modalBox}
+        style={{ width, height }}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className={styles.modalExitButton} onClick={toggleModal}>
           X
         </button>
