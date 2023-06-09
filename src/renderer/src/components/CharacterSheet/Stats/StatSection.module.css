@@ -3,9 +3,10 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.attributes {
+.abilities {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -14,10 +15,10 @@
   margin-left: auto;
 }
 
-.attributes > * {
+.abilities > * {
   margin-left: 2rem;
 }
 
-.attributes :last-child {
+.abilities :last-child {
   margin-right: 4rem;
 }

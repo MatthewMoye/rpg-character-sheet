@@ -1,0 +1,38 @@
+.movementBox {
+  width: 20rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-content-color);
+  border-radius: 0.25rem;
+  border: 0.125rem solid var(--section-content-border-color);
+}
+
+.normalMovementContainer {
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 0.5fr));
+  border-bottom: 0.125rem solid var(--section-content-border-color);
+}
+
+.normalMovementContainer > *:not(:last-child) {
+  border-right: 0.125rem solid var(--section-content-border-color);
+}
+
+.advancedMovementContainer {
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 0.5fr));
+}
+
+.advancedMovementContainer > *:not(:last-child) {
+  border-right: 0.125rem solid var(--section-content-border-color);
+}
+
+.movementTypePrefix {
+  color: var(--text-color);
+  font-size: small;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+}
